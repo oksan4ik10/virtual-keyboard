@@ -15,6 +15,8 @@ const clickKeyboards = () => {
       const setting = localStorage.getItem("setting") ? localStorage.getItem("setting") : "low";
       createKeyboard(lang, setting, keyboards);
     }
+    const elem = document.querySelector(`[data-code="${code}"]`);
+    setTimeout(() => elem.classList.remove("active"), 200);
   });
   document.addEventListener("keydown", (event) => {
     event.preventDefault();

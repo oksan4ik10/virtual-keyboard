@@ -28,7 +28,6 @@ const addClassActive = (code) => {
   }
 
   elem.classList.add("active");
-  setTimeout(() => elem.classList.remove("active"), 200);
 
   inputText(elem);
 };
