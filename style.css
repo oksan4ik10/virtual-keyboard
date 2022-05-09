@@ -24,7 +24,7 @@
     resize: none;
     margin: auto;
     overflow: auto;
-   font-size: calc( 18px + (100vw - 320px) / (1280 - 320) * (40 - 18));
+   font-size: 20px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
