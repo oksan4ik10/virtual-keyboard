@@ -10,8 +10,8 @@ const createPage = () => {
 
   container.classList.add("container");
   textarea.setAttribute("id", "text");
-  textarea.setAttribute("cols", 30);
-  textarea.setAttribute("rows", 5);
+  textarea.setAttribute("cols", 70);
+  textarea.setAttribute("rows", 10);
 
   container.append(textarea);
   keyboardBlock.classList.add("keyboards");
@@ -20,7 +20,7 @@ const createPage = () => {
 
   const desc = document.createElement("h3");
   desc.classList.add("desc");
-  desc.textContent = "Alt+Shift (слева) - для измения раскладки ОС: Windows";
+  desc.textContent = "Alt+Shift (слева) - для измения раскладки(по умолчанию русский, без капса), ОС: Windows";
 
   container.append(desc);
 

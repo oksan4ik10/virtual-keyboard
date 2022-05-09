@@ -1,4 +1,5 @@
 import createKeyboard from "./createKeyboard";
+import inputText from "./inputText";
 
 const addClassActive = (code) => {
   const elem = document.querySelector(`[data-code="${code}"]`);
@@ -28,6 +29,8 @@ const addClassActive = (code) => {
 
   elem.classList.add("active");
   setTimeout(() => elem.classList.remove("active"), 200);
+
+  inputText(elem);
 };
 
 export default addClassActive;

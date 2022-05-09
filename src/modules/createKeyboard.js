@@ -1,8 +1,9 @@
-import keyboard from "./keyboard";
+import Keyboard from "./keyboard";
 
 const createKeyboard = (lang, setting, block) => {
   // eslint-disable-next-line no-param-reassign
   block.textContent = "";
+  const { keyboard } = new Keyboard();
   keyboard.forEach((elem) => {
     const newElem = document.createElement("button");
     newElem.setAttribute("data-code", elem.code);
