@@ -10,6 +10,12 @@ module.exports = {
     filename: "bundle.js",
 
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "RSS Keyboard",
+      template: "src/index.html"
+    })
+  ],
   module: {
     rules: [
       {
@@ -21,5 +27,5 @@ module.exports = {
   devServer: {
     overlay: true,
   },
-  plugins: [new HtmlWebpackPlugin()],
+
 };
