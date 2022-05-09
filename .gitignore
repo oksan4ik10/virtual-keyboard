@@ -1,3 +1,8 @@
 /node_modules/
 package-lock.json
 /dist/
+package.json
+webpack.config.json
+/src/
+/bundle/
+.eslintrc.js
