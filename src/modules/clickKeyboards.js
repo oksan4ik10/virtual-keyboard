@@ -6,7 +6,7 @@ const clickKeyboards = () => {
   keyboards.addEventListener("click", (event) => {
     if (!event.target.matches(".key")) return;
     const code = event.target.getAttribute("data-code");
-    addClassActive(code);
+    addClassActive(code, "true");
   });
   document.addEventListener("keyup", (event) => {
     const { code } = event;
