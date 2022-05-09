@@ -956,16 +956,16 @@ class Keyboard {
       {
         code: "Space",
         en: {
-          up: "",
-          shift: "",
-          low: "",
-          shiftUp: "",
+          up: " ",
+          shift: " ",
+          low: " ",
+          shiftUp: " ",
         },
         ru: {
-          up: "",
-          shift: "",
-          low: "",
-          shiftUp: "",
+          up: " ",
+          shift: " ",
+          low: " ",
+          shiftUp: " ",
 
         },
 
