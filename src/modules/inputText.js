@@ -3,7 +3,11 @@ const inputText = (elem) => {
   const len = textarea.value.length;
   let end = textarea.selectionEnd;
   let start = textarea.selectionStart;
+  if (start === 0){
+    start = len;
+  }
   if (elem.getAttribute("data-code") === "Backspace") {
+
     end -= 1;
     textarea.value = textarea.value.substring(0, start - 1) + textarea.value.substring(start, len);
     textarea.selectionStart = start;
@@ -33,7 +37,7 @@ const inputText = (elem) => {
   if (/Arrow*/.test(elem.getAttribute("data-code"))) {
     textarea.value = `${textarea.value.substring(0, start)}${elem.textContent}${textarea.value.substring(start, len)}`;
     textarea.selectionStart = start;
-    textarea.selectionEnd = end;
+    textarea.selectionEnd = end + 1;
   }
 
   if (elem.matches(".spec")) return;
